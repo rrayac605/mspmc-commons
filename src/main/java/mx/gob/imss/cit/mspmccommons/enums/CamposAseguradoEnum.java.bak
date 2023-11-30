@@ -1,0 +1,30 @@
+package mx.gob.imss.cit.mspmccommons.enums;
+
+import lombok.Getter;
+import lombok.Setter;
+
+public enum CamposAseguradoEnum {
+
+	TIPO_ARCHIVO("cveOrigenArchivo"), FOLIO_ORIGINAL("detalleRegistroDTO.aseguradoDTO.refFolioOriginal"),
+	DELEGACION_NSS("detalleRegistroDTO.aseguradoDTO.cveDelegacionNss"),
+	SUBDELEGACION_NSS("detalleRegistroDTO.aseguradoDTO.cveSubdelNss"),
+	UMF_ADSCRIPCION("detalleRegistroDTO.aseguradoDTO.cveUmfAdscripcion"),
+	DELEGACION_ATENCION("detalleRegistroDTO.aseguradoDTO.cveDelegacionAtencion"),
+	SUBDELEGACION_ATENCION("detalleRegistroDTO.aseguradoDTO.cveSubDelAtencion"),
+	UMF_EXPEDIDORA("detalleRegistroDTO.aseguradoDTO.cveUmfExp"),
+	UMF_PAGADORA("detalleRegistroDTO.aseguradoDTO.cveUmfPagadora"), NSS("detalleRegistroDTO.aseguradoDTO.numNss"),
+	CURP("detalleRegistroDTO.aseguradoDTO.refCurp"), NOMBRE("detalleRegistroDTO.aseguradoDTO.nomAsegurado"),
+	PRIMER_APELLIDO("detalleRegistroDTO.aseguradoDTO.refPrimerApellido"),
+	SEGUNDO_APELLIDO("detalleRegistroDTO.aseguradoDTO.refSegundoApellido"),
+	OCUPACION("detalleRegistroDTO.aseguradoDTO.cveOcupacion"),
+	SALARIO_DIARIO("detalleRegistroDTO.aseguradoDTO.numSalarioDiario"),;
+
+	@Setter
+	@Getter
+	private String nombreCampo;
+
+	private CamposAseguradoEnum(String nombreCampo) {
+		this.nombreCampo = nombreCampo;
+	}
+
+}
