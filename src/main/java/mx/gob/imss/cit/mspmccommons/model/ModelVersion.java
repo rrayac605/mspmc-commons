@@ -5,11 +5,12 @@ import lombok.Setter;
 
 public class ModelVersion {
 	
-	private final static String VERSION_SERVICE_COMMONS = "mspmc-commons-1.0.2";
 	
-	private final static String FOLIO_SERVICE_COMMONS = "INC131824";
+	private final static String VERSION_SERVICE_COMMONS = "mspmc-commons-1.0.3";
 	
-	private final static String NOTA_SERVICE_COMMONS = "Inconveniente seleccion automatica de consecuencia";
+	private final static String FOLIO_SERVICE_COMMONS = "INC112455";
+	
+	private final static String NOTA_SERVICE_COMMONS = "Optimizar reporte general";
 	
 	public ModelVersion() {
 		this.setVersion_service(VERSION_SERVICE_COMMONS);
@@ -34,4 +35,5 @@ public class ModelVersion {
 	@Getter
 	@Setter
 	private String notas;
+	
 }

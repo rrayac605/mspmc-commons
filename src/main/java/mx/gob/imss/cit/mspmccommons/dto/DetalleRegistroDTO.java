@@ -133,5 +133,8 @@ public class DetalleRegistroDTO implements Serializable {
 	@Getter
 	@Setter
 	private Boolean confirmarSinCambios;
+	
+	@Getter
+	private List<CambioDTO> cambiosDTO;
 
 }
